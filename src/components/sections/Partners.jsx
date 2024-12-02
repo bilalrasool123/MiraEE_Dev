@@ -18,7 +18,7 @@ const PartnersSection = ({ paddingTop }) => {
             <div className="onovo-subtitle-1">
               <span dangerouslySetInnerHTML={{ __html: t(Data.subtitle) }} />
             </div>
-            <h2 className="onovo-title-2">
+            <h2 className="onovo-title-2" style={{fontSize: '40px'}}>
               <span dangerouslySetInnerHTML={{ __html: t(Data.title) }} />
             </h2>
           </div>

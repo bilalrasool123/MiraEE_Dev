@@ -18,7 +18,7 @@ const TestimonialSlider = () => {
               <div className="col-xs-12 col-sm-12 col-md-12 col-lg-6">
                 {/* Heading */}
                 <div className="onovo-reviews-titles">
-                  <h2 className="onovo-title-2">
+                  <h2 className="onovo-title-2" style={{fontSize: '45px'}}>
                     <span data-splitting data-onovo-scroll>
                       {t(Data.title)}
                     </span>
@@ -56,7 +56,7 @@ const TestimonialSlider = () => {
                         key={`tts-slide-${key}`}
                         className="swiper-slide onovo-reviews-item"
                       >
-                        <div className="text">
+                        <div className="text" style={{fontSize: '16px'}}>
                           <div data-splitting>
                             <p
                               dangerouslySetInnerHTML={{
