@@ -10,7 +10,7 @@ const AboutSection = () => {
       <section className="onovo-section gap-bottom-140 gap-top-140 ">
         <div className="container">
           <div className="row">
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-8">
+            <div className="col-xs-12 col-sm-12 col-md-12">
               <div className="row">
                 <div className="col-xs-12 col-sm-12 col-md-8 col-lg-12">
                   {/* Heading */}
@@ -18,24 +18,24 @@ const AboutSection = () => {
                     <div className="onovo-subtitle-1">
                       <span>{t(Data.subtitle)}</span>
                     </div>
-                    <h2 className="onovo-title-2">
+                    <h2 className="onovo-title-2" style={{fontSize: '50px'}}>
                       <span
                         dangerouslySetInnerHTML={{ __html: t(Data.title) }}
                       />
                     </h2>
                   </div>
                 </div>
-                <div className="col-xs-12 col-sm-12 col-md-4 col-lg-12 hide-on-desktop gap-bottom-60">
+                {/* <div className="col-xs-12 col-sm-12 col-md-4 col-lg-12 hide-on-desktop gap-bottom-60"> */}
                   {/* Number */}
-                  <div className="onovo-number onovo-circle-text mrg-left">
+                  {/* <div className="onovo-number onovo-circle-text mrg-left">
                     <div className="num onovo-text-white">
                       <span>{t(Data.number.value)}</span>
                     </div>
                     <div className="label onovo-text-black onovo-circle-text-label">
                       {t(Data.number.label)}
                     </div>
-                  </div>
-                </div>
+                  </div> */}
+                {/* </div> */}
               </div>
 
               {/* Description */}
@@ -43,7 +43,7 @@ const AboutSection = () => {
                 {Data.items.map((item, key) => (
                   <div
                     key={`about-item-${key}`}
-                    className="col-xs-12 col-sm-12 col-md-6 col-lg-6"
+                    className="col-xs-12 col-sm-12 col-md-4 col-lg-4"
                   >
                     <h5 className="text-uppercase">{t(item.title)}</h5>
                     <p dangerouslySetInnerHTML={{ __html: t(item.text) }} />
@@ -62,17 +62,17 @@ const AboutSection = () => {
                 ))}
               </div>
             </div>
-            <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 hide-on-mobile">
+            {/* <div className="col-xs-12 col-sm-12 col-md-12 col-lg-4 hide-on-mobile"> */}
               {/* Number */}
-              <div className="onovo-number onovo-circle-text mrg-right">
+               {/* <div className="onovo-number onovo-circle-text mrg-right">
                 <div className="num onovo-text-white">
                   <span>{t(Data.number.value)}</span>
                 </div>
                 <div className="label onovo-text-black onovo-circle-text-label">
                   {t(Data.number.label)}
                 </div>
-              </div>
-            </div>
+              </div>  */}
+            {/* </div> */}
           </div>
         </div>
       </section>

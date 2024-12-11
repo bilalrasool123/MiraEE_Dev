@@ -42,7 +42,7 @@ const About = (props) => {
     <Layouts header={2} footer={2} darkHeader>
       <PageBanner
         pageTitle={t("About Us")}
-        pageDesc={t("MIRA Empowering Future with Digital Solutions!")}
+        pageDesc={t("MIRA Empowering Future with Innovative Solutions!")}
       />
 
       {/* Onovo About */}
