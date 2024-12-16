@@ -94,11 +94,11 @@ const Header2 = ({ darkHeader, cartButton }) => {
     <>
       {/* Header */}
       <header
-        className="onovo-header header--white"
+        className="onovo-header header--white header-width"
         style={{ background: darkHeader && "white" }}
       >
         <div className="header--builder">
-          <div className="container">
+          <div className="header-width">
             <div className="row">
               <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 align-self-center">
                 {/* Logo */}

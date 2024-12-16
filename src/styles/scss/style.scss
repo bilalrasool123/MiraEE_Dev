@@ -121,7 +121,12 @@ strong {
 /* Container */
 
 .container {
-  max-width: 1318px;
+  max-width: 93%;
+}
+
+.header-width{
+  max-width: 100%;
+  padding: 0 2% ;
 }
 
 .container-lg {
@@ -925,12 +930,12 @@ hr {
 }
 .language-select {
   margin-top: 0.1rem;
-  width: 46%;
+  width: 90px;
 }
 
-@media (min-width: 768px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .language-select  {
-    width: 60%;
+    width: 90px;
   }
 }
 
@@ -952,7 +957,7 @@ hr {
 @media (min-width: 769px) and (max-width: 1900px) {
   .hero-title {
     line-height: 1;
-    font-size: 45px; /* For desktop screens */
+    font-size: 40px; /* For desktop screens */
   }
 }
 
