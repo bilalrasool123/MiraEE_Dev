@@ -40,9 +40,9 @@ const Hero2Slider = () => {
                     </div>
                   )}
                   <div className="container">
-                    <div className="row gap-top-140">
+                    <div className="row gap-top-50 md:gap-top-20">
                       <div className="titles col-sm-12 col-md-6 col-lg-8">
-                        <h1 className="title onovo-text-white">
+                        <h1 className="title onovo-text-white hero-h1">
                           <div
                             style={{
                               fontSize: "1rem",
@@ -53,6 +53,7 @@ const Hero2Slider = () => {
                             {t("TECH AT IT'S BEST")}
                           </div>
                           <span
+                            className="hero-title"
                             data-splitting
                             dangerouslySetInnerHTML={{ __html: t(item.title) }}
                           />
@@ -64,7 +65,7 @@ const Hero2Slider = () => {
                               dangerouslySetInnerHTML={{ __html: t(item.text) }}
                             />
                           </div>
-                          <div className="onovo-bts">
+                          <div className="onovo-bts ">
                             <Link
                               className="onovo-btn btn--border btn--white btn--color onovo-hover-btn"
                               href={item.button.link}

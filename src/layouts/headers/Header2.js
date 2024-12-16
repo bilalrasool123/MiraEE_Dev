@@ -228,17 +228,17 @@ const Header2 = ({ darkHeader, cartButton }) => {
                 </div>
               </div>
               <div className="col-4 col-xs-4 col-sm-4 col-md-4 col-lg-2 align-self-center align-right hide-on-mobile-extra">
-                <div >
+                <div style={{ textAlign: 'left !important' }}>
                   <img src="/assets/lang.png"    alt={`flag`}  className="h-[30px] w-[30px]"  />
 
                   <select
                   value={selectedLanguage}
                   onChange={handleChange}
-                  style={{ marginTop: "0.1rem", width: "46%" }}
+                  className="language-select"
                   >
 
                     {languages.map((language) => (
-                        <option key={language.code} value={language.code}>
+                        <option key={language.code} value={language.code} >
                           {language.label}
                         </option>
                     ))}

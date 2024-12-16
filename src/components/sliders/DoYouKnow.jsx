@@ -43,11 +43,11 @@ const DoYouKnowSection = ({ paddingtop = false }) => {
                     />
                   </div>
                   <h5 className="onovo-title-3">
-                    <span>{t(item.title)}</span>
+                    <span className="DYK-title">{t(item.title)}</span>
                   </h5>
                   <div className="onovo-text">
                     <div>
-                      <p className="text-service">{t(item.text)}</p>
+                      <p className="text-service ">{t(item.text)}</p>
                     </div>
                   </div>
                   <div className="onovo-bubble">

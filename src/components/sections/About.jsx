@@ -18,8 +18,9 @@ const AboutSection = () => {
                     <div className="onovo-subtitle-1">
                       <span>{t(Data.subtitle)}</span>
                     </div>
-                    <h2 className="onovo-title-2" style={{fontSize: '50px'}}>
+                    <h2 className="onovo-title-2 " >
                       <span
+                        className="about-title"
                         dangerouslySetInnerHTML={{ __html: t(Data.title) }}
                       />
                     </h2>
@@ -45,18 +46,22 @@ const AboutSection = () => {
                     key={`about-item-${key}`}
                     className="col-xs-12 col-sm-12 col-md-4 col-lg-4"
                   >
-                    <h5 className="text-uppercase">{t(item.title)}</h5>
-                    <p dangerouslySetInnerHTML={{ __html: t(item.text) }} />
+                    <h5 className="text-uppercase text-center">{t(item.title)}</h5>
+                    <p
+                    className="text-center" 
+                    dangerouslySetInnerHTML={{ __html: t(item.text) }} />
                     {item.button != undefined && (
-                      <Link
-                        className="onovo-btn onovo-hover-btn"
-                        href={item.button.link}
-                      >
-                        <i className="arrow">
-                          <span />
-                        </i>
-                        <span>{t(item.button.label)}</span>
-                      </Link>
+                      <div className="about-button">
+                        <Link
+                          className="onovo-btn onovo-hover-btn DYK-button"
+                          href={item.button.link}
+                        >
+                          <i className="arrow">
+                            <span />
+                          </i>
+                          <span>{t(item.button.label)}</span>
+                        </Link>
+                      </div>
                     )}
                   </div>
                 ))}
